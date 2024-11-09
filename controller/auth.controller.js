@@ -113,7 +113,10 @@ export const Login=async(req,res)=>{
         //TODO- here we are calling JWT token function defined on top
         const token=generateToken(user._id)
 
-        res.cookie("access-token",token)
+        res.cookie("access-token",token,{
+            httpOnly:true,
+            
+        })
 
         res.json({
             success:true,
