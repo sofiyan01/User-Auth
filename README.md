@@ -1,0 +1,1 @@
+The Authentication API is a simple Node.js and Express backend that provides user registration, login, and logout functionality using JWT-based authentication. It securely manages user sessions and ensures protected routes for authenticated users. 🚀
